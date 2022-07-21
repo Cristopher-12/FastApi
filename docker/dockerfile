@@ -1,0 +1,15 @@
+FROM ubuntu:20.04
+RUN apt update
+RUN apt upgrade -y
+RUN apt install -y python3
+RUN apt install -y python3-pip
+RUN pip install fastapi
+RUN pip install uvicorn
+RUN pip install pytest
+RUN pip install requests
+RUN pip install databases
+RUN pip install aiosqlite
+RUN pip install types-requests
+RUN pip install stubs
+RUN pip install twisted
+RUN pip install pyrebase
